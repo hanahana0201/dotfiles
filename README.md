@@ -2,7 +2,7 @@
 
 ## How to install
 ```
-$ git clone htttp://github.com/"${username}"/dotfile.git
-$ cd dotfiles
-$ ./install.sh
+ chmod +x dotfiles/setup.sh
+ cd ~/dotfiles
+ ./setup.sh
 ```
