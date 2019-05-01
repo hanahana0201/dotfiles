@@ -45,3 +45,6 @@ fi
 
 # lsの色
 alias ls='ls -G'
+
+# vimでnvimを起動
+alias vim='nvim'
