@@ -1,4 +1,8 @@
-# dotfiles
+# dotfiles 
 
 ## How to install
-`curl -L raw.github.com/hanahana0201/dotfiles/master/install.sh | bash`
+```
+$ git clone htttp://github.com/"${username}"/dotfile.git
+$ cd dotfiles
+$ ./install.sh
+```
