@@ -1,3 +1,6 @@
+# カラー設定
+export TERM=xterm-color256
+
 # Gitブランチ名を表示
 # https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
 source ~/.git-prompt.sh
@@ -43,8 +46,13 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
 
+
 # lsの色
 alias ls='ls -G'
 
 # vimでnvimを起動
 alias vim='nvim'
+
+# nvim init.vimのパス
+export XDG_CONFIG_HOME="$HOME/.config"
+
