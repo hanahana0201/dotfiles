@@ -125,3 +125,5 @@ export TERM=xtermx
 
 # カラー設定
 export TERM=xterm
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
