@@ -65,12 +65,14 @@ alias gst='git status'
 
 # git add
 alias ga='git add'
-
+# git add .
+alias gaa='git add .'
 # 空コミット。大抵は初回コミットで使うので Init というエイリアスにしている。コメントは Vim で入れる
 alias ginit='git commit --allow-empty'
 # git commit。その場でコメントを打てるように -m オプション付き
 alias gc='git commit -m'
-
+# git checkout
+alias gco='git checkout'
 # git log … シンプル表示・10件のみ表示
 alias gl=' git log --date=short --pretty=format:"%C(Yellow)%h %C(Cyan)%cd %C(Reset)%s %C(Blue)[%cn]%C(Red)%d" -10'
 # git log … グラフ表示
