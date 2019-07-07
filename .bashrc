@@ -53,36 +53,35 @@ alias vim='nvim'
 # ----------------------
 # Git Aliases
 # ----------------------
-alias ga='git add'
-alias gaa='git add .'
-alias gaaa='git add -A'
+# git branch
 alias gb='git branch'
-alias gbd='git branch -d '
-alias gc='git commit'
-alias gcm='git commit -m'
-alias gco='git checkout'
-alias gcob='git checkout -b'
-alias gcom='git checkout master'
-alias gd='git diff'
-alias gda='git diff HEAD'
-alias gi='git init'
-alias gl='git log'
-alias glg='git log --graph --oneline --decorate --all'
-alias gld='git log --pretty=format:"%h %ad %s" --date=short --all'
-alias gm='git merge --no-ff'
-alias gp='git pull'
-alias gss='git status -s'
-alias gst='git stash'
-alias gstl='git stash list'
-alias gstp='git stash pop'
-alias gstd='git stash drop'
- 
-# ----------------------
-# Git Function
-# ----------------------
-# Git log find by commit message
-function glf() { git log --all --grep="$1"; }
+# リモートも表示する
+alias gba='git branch -a'
 
+# git status --short --branch の略。省略表記しつつブランチ名も確認できる
+alias gs='git status -sb'
+# 普通の git status
+alias gst='git status'
+
+# git add
+alias ga='git add'
+
+# 空コミット。大抵は初回コミットで使うので Init というエイリアスにしている。コメントは Vim で入れる
+alias ginit='git commit --allow-empty'
+# git commit。その場でコメントを打てるように -m オプション付き
+alias gc='git commit -m'
+
+# git log … シンプル表示・10件のみ表示
+alias gl=' git log --date=short --pretty=format:"%C(Yellow)%h %C(Cyan)%cd %C(Reset)%s %C(Blue)[%cn]%C(Red)%d" -10'
+# git log … グラフ表示
+alias glr='git log --date=short --pretty=format:"%C(Yellow)%h %C(Cyan)%cd %C(Reset)%s %C(Blue)[%cn]%C(Red)%d" --graph'
+# git log … 修正ライン数が分かる
+alias gll='git log --date=short --pretty=format:"%C(Yellow)%h %C(Cyan)%cd %C(Reset)%s %C(Blue)[%cn]%C(Red)%d" --numstat'
+
+# git pull
+alias gpl='git pull'
+# git push
+alias gps='git push'
 # nvim init.vimのパス
 export XDG_CONFIG_HOME="$HOME/.config"
 
