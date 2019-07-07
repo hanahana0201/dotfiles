@@ -57,6 +57,8 @@ alias vim='nvim'
 alias gb='git branch'
 # リモートも表示する
 alias gba='git branch -a'
+# git branch -D
+alias gbd='git branch -D'
 
 # git status --short --branch の略。省略表記しつつブランチ名も確認できる
 alias gs='git status -sb'
