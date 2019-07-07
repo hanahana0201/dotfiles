@@ -82,6 +82,8 @@ alias gll='git log --date=short --pretty=format:"%C(Yellow)%h %C(Cyan)%cd %C(Res
 alias gpl='git pull'
 # git push
 alias gps='git push'
+# git push origin HEAD
+alias gpoh='git push origin HEAD'
 # nvim init.vimのパス
 export XDG_CONFIG_HOME="$HOME/.config"
 
